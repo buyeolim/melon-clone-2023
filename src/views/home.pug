@@ -1,4 +1,13 @@
 extends base
+include mixins/song
 
 block content
-    div
+    h2 melon top 10
+    hr
+    hr
+    ul 
+        each song in songs 
+            +song(song)
+        else 
+            li not found
+    hr

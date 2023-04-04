@@ -1,0 +1,8 @@
+mixin song(info)
+    div
+        h2 rank #{info.rank}
+        ul 
+            li - title: #{info.title}
+            li - artist: #{info.artist}
+            li - #{info.streams}  #{info.streams <= 1 ? "stream": "streams" }
+    hr
